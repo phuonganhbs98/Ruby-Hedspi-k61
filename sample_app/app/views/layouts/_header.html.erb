@@ -1,12 +1,20 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to "sample_app", '#', id: "logo" %>
+      <div class="container-fluid">
+      <div class="row">
+      <div class= "col">
+        <%= link_to "SAMPLE APP", '/', id: "logo" %>
+        </div>
+        <div class="col">
         <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home", '#' %></li>
-            <li><%= link_to "Help", '#' %></li>
-            <li><%= link_to "Log in", '#' %></li>
+          <ul class="nav justify-content-end" id="navbar">
+            <li class= "nav-item"><%= link_to "Home", '/', class: "nav-link" %></li>
+            <li class= "nav-item"><%= link_to "Help", help_path, class: "nav-link" %></li>
+            <li class= "nav-item"><%= link_to "About", about_path, class: "nav-link" %></li>
+            <li class= "nav-item"><%= link_to "Log in", '#', class: "nav-link" %></li>
           </ul>
         </nav>
+        
+        </div>
+        </div>
       </div>
-    </header>
+</header>

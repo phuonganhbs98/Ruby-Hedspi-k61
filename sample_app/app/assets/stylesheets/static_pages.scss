@@ -1,3 +1,75 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+$light-gray: #777;
+$bg-color: #333;
+
+#logo{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: bold !important;
+    color: white;
+    letter-spacing: -1px;
+}
+header{
+    position: relative;
+    top: 0px;
+    height: 60px;
+    margin: 0px !important;
+    background-color: $bg-color !important;
+}
+body{
+    position: relative;
+    top: 0px;
+}
+.container-fluid{
+    padding-left: 3% !important;
+    padding-right: 3% !important;
+}
+.row{
+    width: 100%;
+    #navbar{
+        .nav-link{
+            text-decoration: none;
+            color: $light-gray;
+            font-size: 17px;
+        }
+    }
+}
+
+.content{
+    margin-left: 3% !important;
+    margin-right: 3% !important;
+    background-color: #dddddd;
+    text-align: center;
+    width: 94% !important;
+    margin-top: 8px;
+    margin-bottom: 9px;
+    min-height: 542px;
+    h1{
+        font-size: 70px;
+        font-weight: bold;
+        margin-top: 60px;
+        color: $bg-color;
+    }
+    p{
+        font-size: 18px;
+        margin: 30px auto;
+    }
+    button{
+        padding: 10px 20px !important;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+}
+
+.footer{
+    background-color: $bg-color;
+    color: white;
+    height: 50px;
+    .p-2{
+        margin-top: 15px;
+    }
+}
