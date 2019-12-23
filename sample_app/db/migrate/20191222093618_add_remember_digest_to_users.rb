@@ -4,7 +4,7 @@ class AddRememberDigestToUsers < ActiveRecord::Migration[6.0]
   end
 
   #Returns a random token
-  def User.new_token
-    SecureRandom.urlsafe_base64
-  end
+  # def User.new_token
+  #   SecureRandom.urlsafe_base64
+  # end
 end
